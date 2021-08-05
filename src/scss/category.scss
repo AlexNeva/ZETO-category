@@ -4,11 +4,14 @@
 @import "fonts";
 @import "base";
 @import "../../node_modules/choices.js/public/assets/styles/choices.min.css";
+@import "../../node_modules/nouislider/dist/nouislider.min.css";
 @import "components";
 @import "header/header";
 @import "header/header_responsive";
 @import "search-parts/search-parts";
 @import "output/output";
+@import "product/product";
+@import "product/product_responsive";
 @import "footer/footer";
 @import "footer/footer_responsive";
 @import "popups/catalog";

@@ -489,12 +489,15 @@
       <div class="output">
         <div class="container">
           <aside class="output__filters filters">
-            <div class="filters__filter filter">
+            <div class="output__filter filter filter--main">
               <div class="accordion">
                 <ul class="accordion__list">
-                  <li class="accordion__item open">
+                  <li class="accordion__item">
                     <button class="accordion__control" aria-expanded="false">
-                      <span class="accordion__title">Категории</span>
+                      <span class="accordion__title">
+                        <span class="filter__title">Категории</span>
+                        <span class="filter__choice"></span>
+                      </span>
                       <span class="accordion__icon">
                         <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -504,21 +507,389 @@
                       </span>
                     </button>
                     <div class="accordion__content" aria-hidden="true">
-                      <ul class="accordion__list" data-simplebar>
-                        <li class="accordion__item">
-                          <a href="#" target="_blank">
-                            <span class="accordion__title">
-                              Запчасти для ноутбука
-                            </span>
-                            <span class="accordion__icon">
-                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
-                                  fill="currentColor" />
-                              </svg>
-                            </span>
-                          </a>
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Подкатегории</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Бренд</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Asus
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Aser
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Apple
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Apple
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Lenovo
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            HP
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Dell
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Sumsung
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            LG
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Серия</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Подсерия</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Модель</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Ноутбуки
+                          </span>
+                          <span class="accordion__sub-icon">
+                            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                fill="currentColor" />
+                            </svg>
+                          </span>
                         </li>
                       </ul>
                     </div>
@@ -526,12 +897,1276 @@
                 </ul>
               </div>
             </div>
+            <div class="output__filter filter filter--type">
+              <div class="accordion">
+                <ul class="accordion__list">
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Тип</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <div class="filter__search-field">
+                        <input type="text" name="type" placeholder="Поиск">
+                      </div>
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Li-polimer
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="output__filter filter filter--capacity">
+              <div class="accordion">
+                <ul class="accordion__list">
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Тип</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item active">
+                          <span class="accordion__sub-title">
+                            15.17 Wh
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="output__filter filter filter--color">
+              <div class="accordion">
+                <ul class="accordion__list">
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Тип</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Темно-серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            Серый
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="output__filter filter filter--size">
+              <div class="accordion">
+                <ul class="accordion__list">
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Тип</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            206.60x48.20x20.50мм
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="output__filter filter filter--price">
+              <div class="accordion">
+                <ul class="accordion__list">
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">
+                        <span class="filter__title">Цена</span>
+                        <span class="filter__choice"></span>
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <div class="filter-range">
+                        <div class="filter-range__inputs">
+                          <input type="number" class="filter-range__input" name="price-from" min="0" placeholder="0">
+                          <input type="number" class="filter-range__input" name="price-to" min="0"
+                            placeholder="80 2922">
+                        </div>
+                        <div class="filter-range__slider">
+                          <div id="range-slider"></div>
+                        </div>
+                        <div class="filter-range__btn">
+                          <button class="btn btn--more">
+                            Фильтровать
+                          </button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </aside>
+          <div class="output__main main-output">
+            <div class="main-output__header">
+              <div class="main-output__result">
+                Результаты: 1-20 из 30 5675
+              </div>
+              <div class="main-output__elements">
+                Показать элементы:
+                <div class="main-output__element">
+                  20
+                </div>
+                <div class="main-output__element">
+                  30
+                </div>
+                <div class="main-output__element">
+                  50
+                </div>
+              </div>
+              <div class="main-output__sort">
+                Сортировать по:
+                <select name="sort" id="sort">
+                  <option value="1">По популярности</option>
+                </select>
+              </div>
+              <div class="main-output__view">
+                <button class="main-output__view-btn"></button>
+                <button class="main-output__view-btn"></button>
+              </div>
+            </div>
+            <div class="main-output__cards">
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__preview">
+                  <picture>
+                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
+                      type='image/webp'>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
+                      class="lazyload">
+                  </picture>
+                  <a href="#" target="_blank"></a>
+                </div>
+                <div class="product-card__title">
+                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price price-card">
+                    <div class="price-card__old">
+                      <span class="price-card__num">2 384</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                    <div class="price-card__new">
+                      <span class="price-card__num">2 167</span>
+                      <span class="price-card__currency">грн</span>
+                    </div>
+                  </div>
+                  <div class="product-card__cart cart">
+                    Корзина
+                    <button class="cart__btn btn btn--green">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-output__pages">
+
+            </div>
+          </div>
         </div>
 
       </div>
-
-
     </main>
     <footer class="footer">
       <div class="footer__row footer-top">

@@ -11,6 +11,8 @@ import megamenu from './home/megamenu.js'
 import popup from './home/popups.js'
 import dataDa from './home/dynamicAdapt.js'
 import showMoreText from './home/show-more-text.js'
+import initRangeSlider from './home/uislider.js'
+
 
 window.initAll = () => {
   dataDa();
@@ -23,6 +25,7 @@ window.initAll = () => {
   popup.openPopup();
   popup.closePopup();
   headerSelect();
+  initRangeSlider();
 
   // закрытие всех окон при клике вне
 
