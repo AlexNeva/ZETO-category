@@ -1,0 +1,194 @@
+@media (max-width: 1440px) {
+  .header {
+
+    &__row {
+      &:nth-child(1) {
+        display: none;
+      }
+
+      &:nth-child(2) {
+        
+        background-color: #404040;
+
+        button {
+          margin: 0;
+        }
+
+        .header__lang {
+          display: block;
+          margin-left: auto;
+          margin-right: 10px;
+        }
+
+      }
+
+      &:nth-child(3) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #323232;
+
+        .header__lang {
+          display: none;
+        }
+      }
+    }
+
+    &__cart {
+      font-size: 0;
+      margin-left: unset;
+    }
+    .cart__label {
+      padding-right: 0;
+      display: none;
+    }
+
+    .signin-btn {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      // background-image: url('../img/header/sign-in-icon.svg');
+      // background-repeat: no-repeat;
+      // background-position: 50% 50%;
+      // background-size: 45% auto;
+      margin-right: 10px !important;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    &__search {
+      position: fixed;
+      opacity: 0;
+      top: 0;
+      right: 10px;
+      left: 10px;
+      max-width: 100%;
+    }
+
+    
+    
+    &__burger {
+      display: block;
+    }
+
+    &__catalog {
+      display: none;
+    }
+
+    &__phones {
+      padding-left: 0;
+
+      li {
+
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .search-trigger {
+      display: block;
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__row {
+
+
+      &:nth-child(3) {
+
+        .header__container {
+          justify-content: center;
+        }
+        
+      }
+    }
+
+    &__info {
+      display: none;
+    }
+
+    .search-goods__btn, .signin-btn, .cart__btn, .search-trigger {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__phones {margin-right: 0;}
+  }
+
+  
+}
+
+@media (max-width: 576px) {
+  .header {
+
+    &__row {
+      
+      &:nth-child(2) {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        .search-trigger {
+          margin-left: auto;
+        }
+        .header__lang {
+          display: none;
+        }
+        
+      }
+      &:nth-child(3) {
+        padding-top: 6px;
+      padding-bottom: 6px;
+      }
+    }
+
+    &__phones {
+      position: relative;
+      display: grid;
+      grid-template-columns: max-content max-content;
+      gap: 10px 40px;
+      font-size: 12px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #00B341;
+      }
+
+      li {
+        padding: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &__search {
+      margin-left: auto;
+    }
+
+    &__burger {
+      width: 26px;
+      height: 12px;
+    }
+    
+  }
+}
+

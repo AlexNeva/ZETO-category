@@ -1,0 +1,223 @@
+.catalog-parts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  // .catalog-parts__container
+
+  &__container {
+  }
+
+  // .catalog-parts__title
+
+  &__title {
+    display: none;
+  }
+
+  // .catalog-parts__cards
+
+  &__cards {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(233px, 1fr));
+    grid-auto-rows: 90px;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  // .catalog-parts__card
+
+  &__card {
+    height: 100%;
+    transform-origin: left top;
+    transition: all 0.3s ease-in-out 0s;
+
+    
+    &:hover, &:focus {
+      transform: scale(1.25);
+      padding-right: 20px;
+      z-index: 50;
+      overflow: unset;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0px 0px 15px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      
+      
+
+      button {
+        .card-parts__icon {
+          background-color: #00B341;
+          color: #fff;
+
+
+          svg {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .card-parts__title {
+        font-size: 12px;
+      }
+      .card-parts__menu {
+        visibility: visible;
+        opacity: 1;
+        
+      }
+    }
+  }
+
+  // .catalog-parts__btn
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.card-parts {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 10px 20px 13px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+
+  button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  &__img {
+    position: relative;
+    flex-shrink: 0;
+    width: 52px;
+    height: 50px;
+    margin-right: 10px;
+    color: #00B341;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // .card-parts__title
+
+  &__title {
+    text-align: left;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  // .card-parts__icon
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out 0s;
+
+    svg {
+      transition: transform 0.3s ease-in-out 0s;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 265px;
+
+    
+  }
+
+}
+
+.menu-card {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 3px 3px;
+  transition: all 0.3s ease-in-out 0s;
+
+  a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 12px 15px;
+      padding-right: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out 0s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 25px;
+        background-color: #00B341;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out 0s;
+      }
+  }
+  li {
+
+    &:hover {
+      a {
+        background-color: #EFEFEF;
+        padding-left: 35px;
+
+        &::before {
+          left: 20px;
+        }
+      }
+
+      .menu-card__icon {
+        background-color: #00B341;
+        color: #fff;
+      }
+    }
+  }
+  &__title {
+    
+    margin-right: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out 0s;
+  }
+}
+
+

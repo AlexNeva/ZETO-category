@@ -1,0 +1,149 @@
+.about {
+  margin-bottom: 50px;
+ 
+  color: #fff;
+
+  &__row {
+
+    &:nth-child(1) {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 140px;
+      background-color: #323232;
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        width: 37%;
+        height: 72px;
+        
+        background-repeat: repeat-x;
+
+      }
+    
+      &::before {
+        left: 0;
+        background-position: 100% 0;
+        background-image: url('../img/about/bg-left.png');
+      }
+      
+      
+      &::after {
+        right: 0;
+        background-position: 0 0;
+        background-image: url('../img/about/bg-left.png');
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: -108px;
+      padding-bottom: 60px;
+    }
+  }
+
+  
+
+  // .about__container
+
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+
+  // .about__title
+
+  &__title {
+    text-align: center;
+  }
+
+  // .about__descr
+
+  &__descr {
+    position: relative;
+    padding: 25px 30px 19px 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #404040;
+    height: 218px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out 0s;
+    will-change: height;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background-image: linear-gradient(to top, #404040, transparent);
+      box-shadow: inset 0 0 50px #404040;
+      transition: opacity 0.3s linear 0.3s;
+
+    }
+
+    &.open {
+      &::after {
+        opacity: 0;
+        
+      }
+
+      & + .about__text-more {
+        svg {
+          transform-origin: 50% 50%;
+          transform:translateX(-50%) rotate(180deg);
+        }
+      }
+    }
+  }
+
+  // .about__text-more
+
+  &__text-more {
+    padding-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    position: absolute;
+    z-index: -1;
+    bottom: - 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background-color: #404040;
+    color: #fff;
+    transition: color 0.2s linear 0s;
+
+    &:hover {
+      color: $main-orange;
+    }
+
+    svg {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 8px;
+      transition: transform 0.3s ease-in-out 0s;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    &__descr {
+      padding: 15px 20px 5px 20px;
+    }
+  }
+}
+

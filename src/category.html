@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="http://test.gx.com.ua/" />
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
+
+  <title>ZETO-category</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__row">
+        <div class="header__container container">
+          <nav class="header__nav nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-delivery'></use>
+                    </svg>
+                  </span>
+
+                  Доставка
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-pay'></use>
+                    </svg>
+                  </span>
+
+                  Оплата
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-waranty'></use>
+                    </svg>
+                  </span>
+
+                  Гарантия
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-articles'></use>
+                    </svg>
+                  </span>
+
+                  Статьи и Акции
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-reviews'></use>
+                    </svg>
+                  </span>
+
+                  Отзывы
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-services'></use>
+                    </svg>
+                  </span>
+
+                  Сервисный центр
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-work'></use>
+                    </svg>
+                  </span>
+
+                  Вакансии
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav__img">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#nav-contacts'></use>
+                    </svg>
+                  </span>
+
+                  КОНТАКТЫ
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__signin popup__open btn btn--orange" data-target="auth">
+            <svg>
+              <use xlink:href='img/sprite/sprite.svg#header-auth'></use>
+            </svg>
+            Личный кабинет
+          </button>
+        </div>
+
+      </div>
+      <div class="header__row">
+        <div class="header__container container">
+          <button class="header__burger" data-target="catalog">
+            <svg viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="21" height="2" rx="1" fill="#E8712D" />
+              <rect x="5" y="5" width="21" height="2" rx="1" fill="#E8712D" />
+              <rect y="10" width="21" height="2" rx="1" fill="#E8712D" />
+            </svg>
+
+          </button>
+          <a href="#" class="header__logo">
+            <picture>
+              <source width="114" height="30" srcset='img/header/header-logo-m.svg' media='(max-width: 992px)'>
+              <img width="152" height="40" src="img/header/header-logo.svg" alt="ZETO - логотип компании">
+            </picture>
+
+          </a>
+          <div class="header__lang lang">
+            <button class="lang__btn active">
+              RU
+            </button>
+            |
+            <button class="lang__btn">
+              UA
+            </button>
+          </div>
+          <div class="header__search search-goods" data-da=".search-popup__body,1440,1">
+            <div class="search-goods__menu">
+              <button class="search-goods__label">
+                Выбрать категорию
+              </button>
+              <div class="search-goods__categories">
+                <select name="choice-category" class="search-goods__category">
+
+                </select>
+                <select name="choice-subcategory" class="search-goods__category">
+
+                </select>
+                <select name="choice-brend" class="search-goods__category">
+
+                </select>
+                <select name="choice-series" class="search-goods__category">
+
+                </select>
+                <select name="choice-subseries" class="search-goods__category">
+
+                </select>
+                <select name="choice-model" class="search-goods__category">
+
+                </select>
+
+              </div>
+            </div>
+            <input type="text" name="search-goods" class="search-goods__input" placeholder="Поиск товара">
+            <button class="search-goods__btn btn btn--green">
+              <svg>
+                <use xlink:href='img/sprite/sprite.svg#header-search'></use>
+              </svg>
+              <svg>
+                <use xlink:href='img/sprite/sprite.svg#header-search-close'></use>
+              </svg>
+            </button>
+
+          </div>
+          <button class="search-trigger btn btn--green" data-target="search-popup" aria-label="начать поиск">
+            <svg>
+              <use xlink:href='img/sprite/sprite.svg#header-search'></use>
+            </svg>
+          </button>
+          <button class="signin-btn btn btn--orange" data-target="auth" aria-label="Войти или зарегистрироваться">
+            <svg>
+              <use xlink:href='img/sprite/sprite.svg#header-auth'></use>
+            </svg>
+          </button>
+          <div class="header__cart cart">
+            <div class="cart__label">
+              Корзина
+              <span>
+                1 товар - <strong>828 грн</strong>
+              </span>
+            </div>
+
+            <button class="cart__btn btn btn--green" aria-label="Посмотреть корзину">
+              <svg>
+                <use xlink:href='img/sprite/sprite.svg#cart'></use>
+              </svg>
+            </button>
+            <div class="cart__body body-cart">
+              <h4>
+                (<span class="body-cart__count">1</span>)
+                Товаров в корзине
+              </h4>
+              <div class="body-cart__goods goods-cart">
+                <div class="body-cart__good">
+                  <div class="body-cart__preview">
+                    <img src="img/cart/good-img.jpg" alt=" ">
+                  </div>
+                  <div class="body-cart__info">
+                    <div class="body-cart__price"><span>828</span> грн</div>
+                    <div class="body-cart__counter counter">
+                      <button class="counter__btn counter__btn--minus">-</button>
+                      <input type="number" min="0" name="good-counter" value="0">
+                      <button class="counter__btn counter__btn--plus">+</button>
+                    </div>
+
+                  </div>
+                  <button class="body-cart__delete" aria-label="удалить товар из корзины">
+                    <svg>
+                      <use xlink:href='img/sprite/sprite.svg#trash'></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="body-cart__footer">
+                <div class="body-cart__total total">
+                  <span>Всего:</span>
+                  <div class="total__sum">
+                    <span>828</span> грн
+                  </div>
+                </div>
+                <a href="#" target="_blank" title="Перейти в корзину" class="body-cart__btn btn btn--green">
+                  В корзину
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__row">
+        <div class="header__container container">
+          <button class="header__catalog popup__open btn btn--orange" data-target="catalog">
+            <svg>
+              <use xlink:href='img/sprite/sprite.svg#header-burger'></use>
+            </svg>
+            Каталог товаров
+          </button>
+          <ul class="header__phones">
+            <li>
+              <a href="tel:223-32-39">
+                <span>(044)</span> 223-32-39
+              </a>
+            </li>
+            <li>
+              <a href="tel:709-08-08">
+                <span>(050)</span> 709-08-08
+              </a>
+            </li>
+            <li>
+              <a href="tel:709-08-08">
+                <span>(097)</span> 703-08-08
+              </a>
+            </li>
+            <li>
+              <a href="tel:709-08-08">
+                <span>(063)</span> 709-08-08
+              </a>
+            </li>
+          </ul>
+          <div class="header__lang lang">
+            <button class="lang__btn active">
+              RU
+            </button>
+            |
+            <button class="lang__btn">
+              UA
+            </button>
+          </div>
+          <div class="header__info info-header">
+            <div class="info-header__btn info-header__btn--terms">
+              <button>Условия возврата</button>
+              <div class="info-header__body body-info">
+                <h3>
+                  Как работают условия возврата
+                </h3>
+                <div class="body-info__row">
+                  <div class="body-info__column">
+                    <div class="body-info__image">
+                      <picture>
+                        <source srcset='img/header/body-info-img-1.webp 1x, img/header/body-info-img-1@2x.webp 2x'
+                          type='image/webp'>
+                        <img src="img/header/body-info-img-1.jpg" srcset="img/header/body-info-img-1@2x.jpg 2x" alt=" ">
+                      </picture>
+                    </div>
+                    <div class="body-info__descr">
+                      <p>
+                        Отсутствие у потребителя товарного чека или кассового чека либо иного подтверждающего оплату
+                        товара документа не лишает его возможности ссылаться на свидетельские показания.
+                      </p>
+                      <p>
+                        Перечень непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену
+                        на
+                        аналогичный товар утверждается Правительством РФ.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="body-info__column">
+                    <ul>
+                      <li>
+                        <h4>
+                          ОБМЕН/ВОЗВРАТ
+                        </h4>
+                        <p>
+                          В течении 14 дней с момента покупки
+                        </p>
+                      </li>
+                      <li>
+                        <h4>
+                          ОБМЕН/ВОЗВРАТ
+                        </h4>
+                        <p>
+                          В течении 14 дней с момента покупки
+                        </p>
+                      </li>
+                      <li>
+                        <h4>
+                          ОБМЕН/ВОЗВРАТ
+                        </h4>
+                        <p>
+                          В течении 14 дней с момента покупки
+                        </p>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" target="_blank" class="catalog-parts__btn btn--more">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+
+            <div class="info-header__btn info-header__btn--safe">
+              <button>Безопасная сделка</button>
+              <div class="info-header__body body-info">
+                <h3>
+                  Как работает безопасная сделка
+                </h3>
+                <div class="body-info__row">
+                  <div class="body-info__column">
+                    <div class="body-info__image">
+                      <picture>
+                        <source srcset='img/header/body-info-img-1.webp 1x, img/header/body-info-img-1@2x.webp 2x'
+                          type='image/webp'>
+                        <img src="img/header/body-info-img-1.jpg" srcset="img/header/body-info-img-1@2x.jpg 2x" alt=" ">
+                      </picture>
+                    </div>
+                    <div class="body-info__descr">
+                      <p>
+                        Отсутствие у потребителя товарного чека или кассового чека либо иного подтверждающего оплату
+                        товара документа не лишает его возможности ссылаться на свидетельские показания.
+                      </p>
+                      <p>
+                        Перечень непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену
+                        на
+                        аналогичный товар утверждается Правительством РФ.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="body-info__column">
+                    <ul>
+                      <li>
+                        <span>Покупатель делает заказ</span>
+                      </li>
+                      <li>
+                        <span>На счету продавца фиксируется сумма равная стоимости заказанного товара</span>
+                      </li>
+                      <li>
+                        <span>Продавец отправляет заказ</span>
+                      </li>
+                      <li>
+                        <span>Получатель получает заказа</span>
+                      </li>
+                      <li>
+                        <span>Деньги на счету продавца разблокированы</spa>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" target="_blank" class="catalog-parts__btn btn--more">
+                  Подробнее
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <main class="main">
+      <div class="page-navigation">
+        <div class="container">
+          <nav aria-label="breadcrumb" class="breadcrumb">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a href="#">Главная</a>
+                <svg>
+                  <use xlink:href='img/sprite/sprite.svg#bread-crump-arrow'></use>
+                </svg>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="#">Ноутбуки</a>
+                <svg>
+                  <use xlink:href='img/sprite/sprite.svg#bread-crump-arrow'></use>
+                </svg>
+              </li>
+              <li class="breadcrumb__item active" aria-current="page">Оперативная память</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class='search-parts'>
+        <div class='search-parts__container container'>
+          <div class='search-parts__title section-title'>
+            Оперативная память для ноутбука
+          </div>
+          <div class="search-parts__body">
+            <div class="search-parts__subtitle">
+              Подбор по модели ноутбука
+            </div>
+            <form action="#" class="search-parts__form">
+              <div class="search-parts__control">
+                <label for="category">Введите категорию</label>
+                <select class="search-parts__select" name="category" id="category">
+                  <option value="all">Все</option>
+                  <option value="notebook">Ноутбуки</option>
+                  <option value="tablets">Планшеты</option>
+                  <option value="printers">Принтеры</option>
+                  <option value="displays">Мониторы</option>
+                </select>
+              </div>
+              <div class="search-parts__control">
+                <label for="sub-category">Введите подкатегорию</label>
+                <select class="search-parts__select" name="sub-category" id="sub-category">
+                  <option value="all">Все</option>
+                </select>
+              </div>
+              <div class="search-parts__control">
+                <label for="brend">Введите бренд</label>
+                <select class="search-parts__select" name="brend" id="brend">
+                  <option value="all">Все</option>
+                </select>
+              </div>
+              <div class="search-parts__control">
+                <label for="series">Введите серию</label>
+                <select class="search-parts__select" name="series" id="series">
+                  <option value="all">Все</option>
+                </select>
+              </div>
+              <div class="search-parts__control">
+                <label for="sub-series">Введите подсерию</label>
+                <select class="search-parts__select" name="sub-series" id="sub-series">
+                  <option value="all">Все</option>
+                </select>
+              </div>
+              <div class="search-parts__control">
+                <label for="model">Введите модель</label>
+                <select class="search-parts__select" name="model" id="model">
+                  <option value="all">Все</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="output">
+        <div class="container">
+          <aside class="output__filters filters">
+            <div class="filters__filter filter">
+              <div class="accordion">
+                <ul class="accordion__list">
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__title">Категории</span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__list" data-simplebar>
+                        <li class="accordion__item">
+                          <a href="#" target="_blank">
+                            <span class="accordion__title">
+                              Запчасти для ноутбука
+                            </span>
+                            <span class="accordion__icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__row footer-top">
+        <div class="footer__container container">
+          <div class="footer__column info">
+            <div class="footer__title">ИНФОРМАЦИЯ</div>
+            <nav class="footer__nav">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    О нас
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    Сертификаты
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    Продавать на Zeto.ua
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    Пользовательское соглашение
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    Карта сайта
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column where-buy">
+            <div class="footer__title">ГДЕ КУПИТЬ</div>
+            <div class="where-buy__body">
+              <div class="where-buy__item">
+                <p class="where-buy__address">
+                  <a href="#" target="_blank">г. Киев, ул.Большая Васильковская 143/2</a>
+                </p>
+                <p class="where-buy__time">
+                  Пн - Пт: 9:00 - 18:00, Сб: 9:00 - 17:00
+                </p>
+                <p class="where-buy__warn">
+                  Вс - можете заказать в on-line режиме.
+                </p>
+              </div>
+              <div class="where-buy__item">
+                <p class="where-buy__address">
+                  <a href="#" target="_blank">г. Одесса, ул.Среднефонтанская 19г, ТЦ "Кристалл" этаж 1, магазин №27</a>
+                </p>
+                <p class="where-buy__time">
+                  Пн - Пт: 9:00 - 18:00, Сб: 9:00 - 17:00
+                </p>
+                <p class="where-buy__warn">
+                  Вс - можете заказать в on-line режиме.
+                </p>
+              </div>
+              <div class="where-buy__item where-buy__phones">
+                <ul>
+                  <li><a href="tel:0977030808"><span>(097)</span> 703-08-08 </a></li>
+                  <li><a href="tel:0637090808"><span>(063)</span> 709-08-08</a></li>
+                  <li><a href="tel:0507090808"><span>(050)</span> 709-08-08</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__column socials">
+            <div class="footer__title">Мы в соц. сетях</div>
+            <ul>
+              <li>
+                <a href="#" title="Перейти в facebook" target="_blank">
+                  <svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.404 0.169666L11.6071 0.163574C7.34134 0.163574 4.58462 2.99187 4.58462 7.36941V10.6918H0.766956C0.437064 10.6918 0.169922 10.9592 0.169922 11.2891V16.1029C0.169922 16.4328 0.437369 16.6999 0.766956 16.6999H4.58462V28.8465C4.58462 29.1764 4.85176 29.4435 5.18166 29.4435H10.1626C10.4925 29.4435 10.7597 29.1761 10.7597 28.8465V16.6999H15.2234C15.5533 16.6999 15.8204 16.4328 15.8204 16.1029L15.8223 11.2891C15.8223 11.1307 15.7592 10.979 15.6474 10.8669C15.5356 10.7548 15.3833 10.6918 15.2249 10.6918H10.7597V7.87537C10.7597 6.52168 11.0822 5.83448 12.8456 5.83448L15.4034 5.83357C15.733 5.83357 16.0002 5.56612 16.0002 5.23654V0.766701C16.0002 0.437418 15.7333 0.170276 15.404 0.169666Z"
+                      fill="#00B341" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Перейти в vk" target="_blank">
+                  <svg width="35" height="20" viewBox="0 0 35 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M32.8804 15.7877C31.876 14.5829 30.6939 13.5546 29.5754 12.4627C28.5664 11.4785 28.5028 10.9076 29.3139 9.77164C30.1991 8.53186 31.1512 7.33963 32.0445 6.10545C32.8783 4.95203 33.7307 3.80175 34.1695 2.42073C34.4478 1.54211 34.2017 1.15403 33.3007 1.00019C33.1455 0.973271 32.985 0.971873 32.8269 0.971873L27.4815 0.965579C26.8231 0.95579 26.4592 1.24283 26.2263 1.82636C25.912 2.61512 25.5879 3.40318 25.2135 4.16432C24.3639 5.89008 23.415 7.55815 22.0847 8.97064C21.7913 9.28216 21.4669 9.67584 20.9767 9.51361C20.3634 9.28985 20.1827 8.27943 20.1928 7.93784L20.1876 1.76797C20.0687 0.886564 19.8733 0.493583 18.9981 0.322266L13.4454 0.323315C12.7042 0.323315 12.3325 0.609659 11.9367 1.07326C11.7084 1.34108 11.6395 1.51484 12.1087 1.60365C13.0304 1.77846 13.5496 2.37493 13.6873 3.29899C13.9083 4.77547 13.8929 6.25788 13.7656 7.7403C13.7282 8.17314 13.6537 8.60493 13.4821 9.0091C13.2136 9.64437 12.78 9.77373 12.2105 9.38285C11.6948 9.02903 11.3326 8.52976 10.978 8.02839C9.64632 6.1467 8.5838 4.11747 7.71743 1.98509C7.46709 1.36905 7.0353 0.995647 6.38255 0.985508C4.77881 0.959985 3.17472 0.955789 1.57098 0.986906C0.606012 1.00509 0.318269 1.47359 0.71125 2.34835C2.45799 6.23376 4.40226 10.0111 6.94021 13.4522C8.24327 15.2181 9.73932 16.7771 11.6721 17.8819C13.8625 19.1343 16.2204 19.5112 18.7038 19.3951C19.8666 19.3406 20.2159 19.0382 20.2697 17.8791C20.3061 17.0862 20.396 16.2978 20.7872 15.5852C21.1711 14.886 21.7525 14.7528 22.4227 15.1877C22.758 15.4055 23.0405 15.6828 23.3073 15.9751C23.9618 16.6911 24.5929 17.4288 25.2722 18.1207C26.1242 18.9878 27.1336 19.5 28.4028 19.3955L33.3157 19.3965C34.1073 19.3448 34.5177 18.3742 34.0632 17.4907C33.744 16.8719 33.3252 16.3208 32.8804 15.7877Z"
+                      fill="#00B341" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Перейти в youtube" target="_blank">
+                  <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M32.3201 3.44247C31.9398 2.09636 30.8252 1.03524 29.4116 0.672769C26.8293 0 16.4996 0 16.4996 0C16.4996 0 6.17039 0 3.58803 0.647262C2.20168 1.00934 1.05985 2.09655 0.679579 3.44247C0 5.90111 0 11 0 11C0 11 0 16.1246 0.679579 18.5575C1.06026 19.9034 2.17449 20.9646 3.58823 21.327C6.19758 22 16.5 22 16.5 22C16.5 22 26.8293 22 29.4116 21.3527C30.8254 20.9905 31.9398 19.9293 32.3205 18.5834C32.9999 16.1246 32.9999 11.0259 32.9999 11.0259C32.9999 11.0259 33.0271 5.90111 32.3201 3.44247ZM13.2109 15.7105V6.28947L21.8005 11L13.2109 15.7105Z"
+                      fill="#00B341" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column requisites">
+            <div class="footer__title">
+              РЕКВИЗИТЫ КОМПАНИИ:
+            </div>
+            <p>ИНН: 3111504193</p>
+            <p>МФО: 305299</p>
+            <p>Р/С: UA063052990000026008006705434</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__row subscribe">
+        <div class="footer__container container">
+          <div class="footer__title">
+            ПОДПИСАТЬСЯ НА НОВОСТИ
+          </div>
+          <form action="#">
+            <input type="email" name="user-email" placeholder="Ваш e-mail">
+            <button type="submit" class="btn btn--green">
+              Подписаться
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__row copyright">
+        <div class="footer__container container">
+          <p>
+            Интернет-магазин ZETO © 2008-2021
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="catalog popup" id="catalog">
+
+      <div class="catalog__container container">
+
+        <div class="catalog__body popup__body">
+          <div class="catalog__header">
+            <button class="catalog__close popup__close" aria-label="Зыкрыть каталог">
+              <svg>
+                <use xlink:href='img/sprite/sprite.svg#popup-close'></use>
+              </svg>
+            </button>
+            <a href="#" class="catalog__logo">
+              <img width="95" height="26" src="img/popups/popup-logo.svg" alt="логотип">
+            </a>
+            <div class="catalog__lang lang">
+              <button class="lang__btn active">
+                RU
+              </button>
+              |
+              <button class="lang__btn">
+                UA
+              </button>
+            </div>
+          </div>
+          <div class="catalog__main">
+            <div class="catalog__title">
+              Каталог товаров
+            </div>
+            <div class="catalog__input">
+              <input type="text" name="search-catalog" id="search-catalog" placeholder="Поиск">
+              <label for="search-catalog"></label>
+            </div>
+            <div class="mega-m">
+              <ul class="mega-m__menu" data-simplebar>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#notebook'></use>
+                      </svg>
+                    </span>
+                    <span class="mega-m__title">Запчасти для ноутбука</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#tablet'></use>
+                      </svg>
+
+                    </span>
+                    <span class="mega-m__title">Запчасти для планшетов</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#printer'></use>
+                      </svg>
+
+                    </span>
+                    <span class="mega-m__title">Запчасти для принтеров</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#display'></use>
+                      </svg>
+
+                    </span>
+                    <span class="mega-m__title">Запчасти для мониторов</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#notebook'></use>
+                      </svg>
+
+                    </span>
+                    <span class="mega-m__title">Запчасти для ноутбука</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#tablet'></use>
+                      </svg>
+
+                    </span>
+                    <span class="mega-m__title">Запчасти для планшетов</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#printer'></use>
+                      </svg>
+
+                    </span>
+                    <span class="mega-m__title">Запчасти для принтеров</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="mega-m__img">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#display'></use>
+                      </svg>
+
+                    </span>
+                    <span class="mega-m__title">Запчасти для мониторов</span>
+                    <span class="mega-m__icon">
+                      <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                  </a>
+
+                </li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+              <ul class="mega-m__submenu">
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">КОЛЕБАТЕЛЬНЫЙ УЗЕЛ</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">ПАЛЕЦ ОТДЕЛЕНИЯ (СЕПАРАТОР)</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">РОЛИК ЗАХВАТА / ПОДАЧИ БУМАГИ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">ТЕРМИСТОР, ТЕРМОСТАТ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">СМАЗКА, ПУДРА, ОЧИСТИТЕЛЬ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">НАГРЕВАТЕЛЬНЫЙ ЭЛЕМЕНТ</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">ВАЛ, ОБОЛОЧКА</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">УЗЕЛ ЗАКРЕПЛЕНИЯ В СБОРЕ</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">ПЛАСТИНА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+                <li><a href="#" target="_blank">МУФТА</a></li>
+              </ul>
+            </div>
+            <div class="catalog__menu">
+              <div class="catalog__title">Меню</div>
+              <nav class="catalog__nav nav">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-delivery'></use>
+                        </svg>
+                      </span>
+                      Доставка
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-pay'></use>
+                        </svg>
+                      </span>
+                      Оплата
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-waranty'></use>
+                        </svg>
+                      </span>
+                      Гарантия
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-articles'></use>
+                        </svg>
+                      </span>
+                      Статьи и Акции
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-reviews'></use>
+                        </svg>
+                      </span>
+                      Отзывы
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-services'></use>
+                        </svg>
+                      </span>
+                      Сервисный центр
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-work'></use>
+                        </svg>
+                      </span>
+                      Вакансии
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="nav__img">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#nav-contacts'></use>
+                        </svg>
+                      </span>
+                      КОНТАКТЫ
+                      <span class="nav__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="autorization popup" id="auth">
+      <div class="autorization__container container">
+        <div class="autorization__wrapper">
+          <button class="autorization__close popup__close" aria-label="зыкрыть окно">
+            <svg>
+              <use xlink:href='img/sprite/sprite.svg#popup-close'></use>
+            </svg>
+          </button>
+          <div class="autorization__body popup__body">
+
+            <div class="autorization__title">
+              Войти в кабинет
+            </div>
+            <form action="#" class="autorization__form">
+              <div class="autorization__control">
+                <label for="user-login">Логин:</label>
+                <input id="user-login" type="text" name="user-login">
+              </div>
+              <div class="autorization__control">
+                <label for="user-password">Пароль:</label>
+                <input id="user-password" type="password" name="user-password">
+              </div>
+              <div class="autorization__control autorization__control--links">
+                <a href="#" target="_blank">Забыли пароль?</a>
+                <a href="#" target="_blank">Регистрация?</a>
+              </div>
+              <button type="submit" class="btn btn--green">
+                Войти
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="search-popup popup" id="search-popup">
+      <div class="search-popup__body popup__body">
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

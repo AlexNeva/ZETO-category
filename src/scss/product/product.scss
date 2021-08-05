@@ -1,0 +1,263 @@
+.product {
+  margin-bottom: 40px;
+  
+
+  // .find-parts__container
+
+  &__container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  // .find-parts__title
+
+  &__title {
+    text-align: center;
+  }
+
+  &__cards {
+    position: relative;
+    padding-left: 68px;
+    padding-right: 68px;
+
+    .cards-swiper-prev, .cards-swiper-next {
+      position: absolute;
+      z-index: 50;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .cards-swiper-prev {
+      left: 0;
+    }
+    .cards-swiper-next {
+      right: 0;
+    }
+  }
+
+  
+  
+}
+
+.product-card {
+  
+  // width: 100%;
+  width: 233px;
+  // max-width: 233px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  // .product-card__preview
+
+  &__preview {
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding-bottom: 90%;
+    margin-bottom: 15px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 8px);
+      height: 100%;
+      object-fit: contain;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0);
+      transition: background-color 0.2s linear 0s;
+
+      
+
+      &:hover {
+        background-color: rgba(0,0,0,.5);
+
+      }
+
+
+    }
+  }
+
+  // .product-card__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: color 0.2s linear 0s;
+
+    &:hover {
+      color: $main-orange;
+    }
+  }
+
+  // .product-card__footer
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  // .product-card__price
+
+  &__price {
+  }
+
+  // .product-card__cart
+
+  &__cart {
+    font-size: 0;
+  }
+
+  &--new {
+    position: relative;
+
+    &::before {
+      content: 'NEW';
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      top: 20px;
+      width: 80px;
+      height: 30px;
+      background-color: #00B341;
+      clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
+      padding-right: 10px;
+    }
+
+  }
+  &--hit {
+    position: relative;
+
+    &::before {
+      content: 'HIT';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      top: 20px;
+      width: 80px;
+      height: 30px;
+      background-color: #E8712D;
+      clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
+      padding-right: 10px;
+    }
+
+  }
+}
+
+
+
+.cards-swiper {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  
+
+  .swiper-slide {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  // .price-card__old
+
+  &__old {
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: line-through;
+  }
+
+  // .price-card__num
+
+  &__num {
+  }
+
+  // .price-card__currency
+
+  &__currency {
+    
+  }
+
+  // .price-card__new
+
+  &__new {
+    font-size: 20px;
+    .price-card__num {
+      font-weight: 500;
+      color: #00B341;;
+    }
+    .price-card__currency {
+      font-weight: 700;
+    }
+  }
+}
+
+
+.cards-swiper-prev, .cards-swiper-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: $main-green;
+  color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transition: background-color 0.2s linear 0s;
+
+  &:hover {
+    background-color: $main-orange;
+    
+
+  }
+  svg {
+    width: 13px;
+    height: 20px;
+  }
+}
+
+.cards-swiper-prev {
+  
+}
+.cards-swiper-next {
+  
+}
+
+.history-parts {
+  margin-bottom: 20px;
+}
+

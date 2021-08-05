@@ -1,0 +1,27 @@
+@media (max-width: 1440px) {
+  .mega-m {
+  
+  
+  
+    &__submenu {
+      grid-template-columns:1fr;
+    }
+
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .mega-m {
+    &__submenu {
+      display: none;
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .catalog-parts {
+    display: none;
+  }
+}

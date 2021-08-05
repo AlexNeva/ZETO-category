@@ -1,0 +1,92 @@
+@media (max-width: 1440px) {
+  .footer {
+
+  }
+
+  .footer-top {
+    .footer__container {
+      grid-template-columns: max-content max-content;
+      justify-content: space-between;
+      gap:30px 50px;
+    }
+  }
+
+  .where-buy {
+    grid-row: 1 / span 3;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-top {
+    .footer__container {
+      grid-template-columns: 1fr;
+      gap: 30px 0;
+    }
+  }
+
+  .where-buy {
+    grid-row: unset;
+
+
+    &__phones {
+      max-width: 580px;
+    }
+  }
+
+  .info {
+    display: none;
+  }
+
+  .subscribe {
+    
+    h3 {
+      flex: 0 0 100%;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  
+    .footer__container {
+      flex-wrap: wrap;
+    }
+    
+  }
+}
+
+@media (max-width: 576px) {
+
+  .footer-top {
+    .footer__container {
+      grid-template-columns: 1fr;
+      gap: 20px 0;
+    }
+  }
+  .where-buy {
+    
+
+    &__item {
+      padding-left: 10px;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    
+  }
+
+  .subscribe {
+  
+    form {
+      flex-wrap: wrap;
+  
+      input {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+      button {
+        flex: 0 0 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}
