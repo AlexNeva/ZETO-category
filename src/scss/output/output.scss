@@ -471,6 +471,8 @@
   // .main-output__cards
 
   &__cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
     gap: 25px;
