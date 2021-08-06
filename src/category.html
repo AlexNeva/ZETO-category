@@ -346,7 +346,7 @@
                     </ul>
                   </div>
                 </div>
-                <a href="#" target="_blank" class="catalog-parts__btn btn--more">
+                <a href="#" target="_blank" class="catalog-parts__btn btn--more btn--lines">
                   Подробнее
                 </a>
               </div>
@@ -399,7 +399,7 @@
                     </ul>
                   </div>
                 </div>
-                <a href="#" target="_blank" class="catalog-parts__btn btn--more">
+                <a href="#" target="_blank" class="catalog-parts__btn btn--more btn--lines">
                   Подробнее
                 </a>
               </div>
@@ -412,7 +412,7 @@
     </header>
     <main class="main">
       <div class="page-navigation">
-        <div class="container">
+        <div class="page-navigation__container container">
           <nav aria-label="breadcrumb" class="breadcrumb">
             <ol class="breadcrumb__list">
               <li class="breadcrumb__item">
@@ -444,7 +444,7 @@
             <form action="#" class="search-parts__form">
               <div class="search-parts__control">
                 <label for="category">Введите категорию</label>
-                <select class="search-parts__select" name="category" id="category">
+                <select class="select-primary" name="category" id="category">
                   <option value="all">Все</option>
                   <option value="notebook">Ноутбуки</option>
                   <option value="tablets">Планшеты</option>
@@ -454,31 +454,31 @@
               </div>
               <div class="search-parts__control">
                 <label for="sub-category">Введите подкатегорию</label>
-                <select class="search-parts__select" name="sub-category" id="sub-category">
+                <select class="select-primary" name="sub-category" id="sub-category">
                   <option value="all">Все</option>
                 </select>
               </div>
               <div class="search-parts__control">
                 <label for="brend">Введите бренд</label>
-                <select class="search-parts__select" name="brend" id="brend">
+                <select class="select-primary" name="brend" id="brend">
                   <option value="all">Все</option>
                 </select>
               </div>
               <div class="search-parts__control">
                 <label for="series">Введите серию</label>
-                <select class="search-parts__select" name="series" id="series">
+                <select class="select-primary" name="series" id="series">
                   <option value="all">Все</option>
                 </select>
               </div>
               <div class="search-parts__control">
                 <label for="sub-series">Введите подсерию</label>
-                <select class="search-parts__select" name="sub-series" id="sub-series">
+                <select class="select-primary" name="sub-series" id="sub-series">
                   <option value="all">Все</option>
                 </select>
               </div>
               <div class="search-parts__control">
                 <label for="model">Введите модель</label>
-                <select class="search-parts__select" name="model" id="model">
+                <select class="select-primary" name="model" id="model">
                   <option value="all">Все</option>
                 </select>
               </div>
@@ -487,7 +487,7 @@
         </div>
       </div>
       <div class="output">
-        <div class="container">
+        <div class="output__container container">
           <aside class="output__filters filters">
             <div class="output__filter filter filter--main">
               <div class="accordion">
@@ -1436,736 +1436,1956 @@
                 Результаты: 1-20 из 30 5675
               </div>
               <div class="main-output__elements">
-                Показать элементы:
-                <div class="main-output__element">
+                <span>Показать элементы:</span>
+                <button class="main-output__element filter-btn active">
                   20
-                </div>
-                <div class="main-output__element">
+                </button>
+                <button class="main-output__element filter-btn">
                   30
-                </div>
-                <div class="main-output__element">
+                </button>
+                <button class="main-output__element filter-btn">
                   50
-                </div>
+                </button>
               </div>
               <div class="main-output__sort">
-                Сортировать по:
-                <select name="sort" id="sort">
+                <span>Сортировать по:</span>
+                <select name="sort" id="sort" class="select-primary no-search">
                   <option value="1">По популярности</option>
+                  <option value="2">По цене</option>
                 </select>
               </div>
               <div class="main-output__view">
-                <button class="main-output__view-btn"></button>
-                <button class="main-output__view-btn"></button>
+                <button class="main-output__view-btn filter-btn active">
+                  <svg>
+                    <use xlink:href='img/sprite/sprite.svg#grid-view'></use>
+                  </svg>
+                </button>
+                <button class="main-output__view-btn filter-btn">
+                  <svg>
+                    <use xlink:href='img/sprite/sprite.svg#string-view'></use>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="main-output__cards">
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
                   </div>
-                </div>
-              </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
-                  </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
-                    </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="product__card product-card">
-                <div class="product-card__preview">
-                  <picture>
-                    <source data-srcset='img/product-card/card-1.webp 1x, img/product-card/card-1@2x.webp 2x'
-                      type='image/webp'>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      data-src="img/product-card/card-1.jpg" data-srcset="img/product-card/card-1@2x.jpg 2x" alt=" "
-                      class="lazyload">
-                  </picture>
-                  <a href="#" target="_blank"></a>
-                </div>
-                <div class="product-card__title">
-                  <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
-                </div>
-                <div class="product-card__footer">
-                  <div class="product-card__price price-card">
-                    <div class="price-card__old">
-                      <span class="price-card__num">2 384</span>
-                      <span class="price-card__currency">грн</span>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
                     </div>
-                    <div class="price-card__new">
-                      <span class="price-card__num">2 167</span>
-                      <span class="price-card__currency">грн</span>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
                     </div>
                   </div>
-                  <div class="product-card__cart cart">
-                    Корзина
-                    <button class="cart__btn btn btn--green">
-                      <svg>
-                        <use xlink:href='img/sprite/sprite.svg#cart'></use>
-                      </svg>
-                    </button>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="main-output__card product-card">
+                  <div class="product-card__preview">
+                    <picture>
+                      <source data-srcset='img/product-card/card-2.webp 1x, img/product-card/card-2@2x.webp 2x'
+                        type='image/webp'>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="img/product-card/card-2.jpg" data-srcset="img/product-card/card-2@2x.jpg 2x" alt=" "
+                        class="lazyload">
+                    </picture>
+                    <a href="#" target="_blank"></a>
+                  </div>
+                  <div class="product-card__title">
+                    <a href="#" target="_blank">Матрица Lenovo IDEAPAD 100-15IBD</a>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price price-card">
+                      <div class="price-card__old">
+                        <span class="price-card__num">2 384</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                      <div class="price-card__new">
+                        <span class="price-card__num">2 167</span>
+                        <span class="price-card__currency">грн</span>
+                      </div>
+                    </div>
+                    <div class="product-card__cart cart">
+                      Корзина
+                      <button class="cart__btn btn btn--green">
+                        <svg>
+                          <use xlink:href='img/sprite/sprite.svg#cart'></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="main-output__pages">
+            <div class="main-output__nav nav-pages">
+              <nav aria-label="Навигация по страницам">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link btn--white page-link--prev" href="#" aria-label="Предыдущая страница">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#arrow-prev'></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn active" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">4</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">5</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">1-100</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">101-200</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">201-300</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">345</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">346</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link filter-btn" href="#">347</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn--white page-link--next" href="#" aria-label="Следующая страница">
+                      <svg>
+                        <use xlink:href='img/sprite/sprite.svg#arrow-next'></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="btn btn--more">показать ещё 20</button>
+            </div>
+            <div class="main-output__model">
+              <span>Выберите модель вашего ноутбука</span>
+              <div class="output__filter filter filter--main">
+                <div class="accordion">
+                  <ul class="accordion__list">
+                    <li class="accordion__item open">
+                      <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__title">
+                          <span class="filter__title">Бренд</span>
+                          <span class="filter__choice"></span>
+                        </span>
+                        <span class="accordion__icon">
+                          <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                              fill="currentColor" />
+                          </svg>
+                        </span>
+                      </button>
+                      <div class="accordion__content" aria-hidden="true">
+                        <ul class="accordion__sub-list">
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Asus
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Aser
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Apple
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Apple
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Lenovo
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              HP
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Dell
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Sumsung
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              LG
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="accordion__item open">
+                      <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__title">
+                          <span class="filter__title">Серия</span>
+                          <span class="filter__choice"></span>
+                        </span>
+                        <span class="accordion__icon">
+                          <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                              fill="currentColor" />
+                          </svg>
+                        </span>
+                      </button>
+                      <div class="accordion__content" aria-hidden="true">
+                        <ul class="accordion__sub-list">
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="accordion__item">
+                      <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__title">
+                          <span class="filter__title">Подсерия</span>
+                          <span class="filter__choice"></span>
+                        </span>
+                        <span class="accordion__icon">
+                          <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                              fill="currentColor" />
+                          </svg>
+                        </span>
+                      </button>
+                      <div class="accordion__content" aria-hidden="true">
+                        <ul class="accordion__sub-list">
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="accordion__item">
+                      <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__title">
+                          <span class="filter__title">Модель</span>
+                          <span class="filter__choice"></span>
+                        </span>
+                        <span class="accordion__icon">
+                          <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                              fill="currentColor" />
+                          </svg>
+                        </span>
+                      </button>
+                      <div class="accordion__content" aria-hidden="true">
+                        <ul class="accordion__sub-list">
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                          <li class="accordion__sub-item">
+                            <span class="accordion__sub-title">
+                              Ноутбуки
+                            </span>
+                            <span class="accordion__sub-icon">
+                              <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                                  fill="currentColor" />
+                              </svg>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-output__brands">
+              <div class="section-title">
+                Бренды оперативной памяти для Вашего ноутбука
+              </div>
+              <div class="accordion">
+                <ul class="accordion__list">
+                  <li class="accordion__item open">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__img">
+                        <picture>
+                          <source srcset='img/logos/asus.webp' type='image/webp'>
+                          <img src='img/logos/asus.png' alt=' '>
+                        </picture>
+                      </span>
+                      <span class="accordion__title">
+                        Оперативная память для ноутбуков Asus
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
 
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__img">
+                        <picture>
+                          <source srcset='img/logos/acer.webp' type='image/webp'>
+                          <img src='img/logos/acer.png' alt=' '>
+                        </picture>
+                      </span>
+                      <span class="accordion__title">
+                        Aser
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__img">
+                        <picture>
+                          <source srcset='img/logos/aple.webp' type='image/webp'>
+                          <img src='img/logos/aple.png' alt=' '>
+                        </picture>
+                      </span>
+                      <span class="accordion__title">
+                        Apple
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__img">
+                        <picture>
+                          <source srcset='img/logos/lenovo.webp' type='image/webp'>
+                          <img src='img/logos/lenovo.png' alt=' '>
+                        </picture>
+                      </span>
+                      <span class="accordion__title">
+                        Lenovo
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <button class="accordion__control" aria-expanded="false">
+                      <span class="accordion__img">
+                        <picture>
+                          <source srcset='img/logos/hp.webp' type='image/webp'>
+                          <img src='img/logos/hp.png' alt=' '>
+                        </picture>
+                      </span>
+                      <span class="accordion__title">
+                        HP
+                      </span>
+                      <span class="accordion__icon">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                      <ul class="accordion__sub-list">
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B9440UA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B80
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LG
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS B551LA
+                          </span>
+                        </li>
+                        <li class="accordion__sub-item">
+                          <span class="accordion__sub-title">
+                            ASUS A541UV
+                          </span>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="article">
+        <div class="article__container container">
+          <nav class="article__nav nav-article">
+            <div class="nav-article__title">
+              Краткое содержание статьи:
+            </div>
+            <ol class="nav-article__list">
+              <li class="nav-article__item">
+                <a href="#">
+                  Для чего нужна оперативная память
+                </a>
+                <ol class="nav-article__sublist">
+                  <li class="nav-article__subitem">
+                    <a href="#">
+                      Для чего нужна оперативная память
+                    </a>
+                  </li>
+                  <li class="nav-article__subitem">
+                    <a href="#">
+                      Для чего нужна оперативная память
+                    </a>
+                  </li>
+                </ol>
+              </li>
+              <li class="nav-article__item">
+                <a href="#">
+                  Для чего нужна оперативная память
+                </a>
+              </li>
+              <li class="nav-article__item">
+                <a href="#">
+                  Для чего нужна оперативная память
+                </a>
+              </li>
+              <li class="nav-article__item">
+                <a href="#">
+                  Для чего нужна оперативная память
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
       </div>
     </main>
     <footer class="footer">

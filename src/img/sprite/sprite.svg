@@ -190,6 +190,17 @@
   <symbol id="bread-crump-arrow" viewBox="0 0 6 8">
     <path d="M0.333985 7.05666L3.63181 4L0.333984 0.943344L1.35172 -4.44868e-08L5.66732 4L1.35172 8L0.333985 7.05666Z" fill="currentColor"/>
   </symbol>
+  <symbol id="grid-view" viewBox="0 0 22 22">
+    <path d="M9.16667 0H0V9.16667H9.16667V0Z" fill="currentColor"/>
+    <path d="M22.0007 0H12.834V9.16667H22.0007V0Z" fill="currentColor"/>
+    <path d="M9.16667 12.8335H0V22.0002H9.16667V12.8335Z" fill="currentColor"/>
+    <path d="M22.0007 12.8335H12.834V22.0002H22.0007V12.8335Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="string-view" viewBox="0 0 22 16">
+    <path d="M21.0297 0H0.970703V2.8417H21.0297V0Z" fill="currentColor"/>
+    <path d="M21.0297 6.12939H0.970703V8.97109H21.0297V6.12939Z" fill="currentColor"/>
+    <path d="M21.0297 12.2583H0.970703V15.1H21.0297V12.2583Z" fill="currentColor"/>
+  </symbol>
 </svg>
 
 
