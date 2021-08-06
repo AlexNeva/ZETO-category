@@ -1,6 +1,6 @@
 export default function showMoreText() {
-  const showMoreBlock = document.querySelector('.about__descr'),
-    showMoreTrigger = document.querySelector('.about__text-more');
+  const showMoreBlock = document.querySelector('.article__descr'),
+    showMoreTrigger = document.querySelector('.article__text-more');
 
 
   showMoreTrigger.onclick = () => {

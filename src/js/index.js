@@ -26,6 +26,7 @@ window.initAll = () => {
   popup.closePopup();
   headerSelect();
   initRangeSlider();
+  showMoreText();
 
   // закрытие всех окон при клике вне
 
